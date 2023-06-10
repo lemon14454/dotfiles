@@ -1,7 +1,5 @@
-require('rose-pine').setup({
-    disable_background = true
-})
+vim.opt.background = "dark"
+vim.g.gruvbox_material_background = "hard"
+vim.g.gruvbox_material_better_performance = 1
 
-vim.cmd.colorscheme("rose-pine")
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+vim.cmd("colorscheme gruvbox-material")
