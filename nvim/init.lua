@@ -1,1 +1,3 @@
-require("mengtse")
+require "options"
+require "plugins"
+require "remap"
