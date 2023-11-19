@@ -1,13 +1,14 @@
 return {
 
+    { "rose-pine/neovim",      name = "rose-pine" },
+
     "tpope/vim-fugitive",
     "tpope/vim-rhubarb",
     'lewis6991/gitsigns.nvim',
 
-    "theprimeagen/harpoon",
-    { "rose-pine/neovim",      name = "rose-pine" },
+    'folke/neodev.nvim',
 
-    { 'numToStr/Comment.nvim', opts = {} },
+    "theprimeagen/harpoon",
 
     {
         "numToStr/Comment.nvim",
@@ -23,25 +24,25 @@ return {
         },
     },
 
-    {
-        'neovim/nvim-lspconfig',
-        dependencies = {
-            'williamboman/mason.nvim',
-            'williamboman/mason-lspconfig.nvim',
-            { 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
-            'folke/neodev.nvim',
-        },
-    },
 
-    {
-        'hrsh7th/nvim-cmp',
-        dependencies = {
-            'L3MON4D3/LuaSnip',
-            'saadparwaiz1/cmp_luasnip',
-            'rafamadriz/friendly-snippets',
-            'hrsh7th/cmp-nvim-lsp',
-        },
-    },
+    -- LSP Support
+    { 'VonHeikemen/lsp-zero.nvim',        branch = 'v1.x' },
+    { 'neovim/nvim-lspconfig' },
+    { 'williamboman/mason.nvim' },
+    { 'williamboman/mason-lspconfig.nvim' },
+
+    -- Autocompletion
+    { 'hrsh7th/nvim-cmp' },
+    { 'hrsh7th/cmp-buffer' },
+    { 'hrsh7th/cmp-path' },
+    { 'saadparwaiz1/cmp_luasnip' },
+    { 'hrsh7th/cmp-nvim-lsp' },
+    { 'hrsh7th/cmp-nvim-lua' },
+
+    -- Snippets
+    { 'L3MON4D3/LuaSnip' },
+    { 'rafamadriz/friendly-snippets' },
+
 
     {
         'nvim-treesitter/nvim-treesitter',
