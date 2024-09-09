@@ -10,6 +10,7 @@ require('lazy').setup {
   require 'custom.plugins.nvim-cmp',
   require 'custom.plugins.telescope',
   require 'custom.plugins.treesitter',
+  require 'custom.plugins.dadbod',
 
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',

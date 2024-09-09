@@ -50,10 +50,10 @@ return {
         require('dapui').eval(nil, { enter = true })
       end)
 
-      vim.keymap.set('n', '<F5>', dap.continue)
-      vim.keymap.set('n', '<F6>', dap.step_over)
-      vim.keymap.set('n', '<F7>', dap.step_into)
-      vim.keymap.set('n', '<F8>', dap.step_out)
+      vim.keymap.set('n', '<space>5', dap.continue)
+      vim.keymap.set('n', '<space>6', dap.step_over)
+      vim.keymap.set('n', '<space>7', dap.step_into)
+      vim.keymap.set('n', '<space>8', dap.step_out)
 
       dap.listeners.before.attach.dapui_config = function()
         ui.open()
