@@ -4,8 +4,6 @@ return {
   priority = 1000, -- Make sure to load this before all the other start plugins.
   config = function()
     require('rose-pine').setup {
-      variant = 'moon',
-      dark_variant = 'moon',
       bold_vert_split = true,
       disable_background = true,
       disable_float_background = true,

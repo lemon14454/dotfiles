@@ -88,7 +88,6 @@ return { -- LSP Configuration & Plugins
 
     local servers = {
       gopls = {},
-      tsserver = {},
       ['js-debug-adapter'] = {},
       lua_ls = {
         -- cmd = {...},

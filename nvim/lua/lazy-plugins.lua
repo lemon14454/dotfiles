@@ -16,11 +16,6 @@ require('lazy').setup {
   'tpope/vim-rhubarb',
   'tpope/vim-sleuth',
   { 'numToStr/Comment.nvim', opts = {} },
-  {
-    'ThePrimeagen/harpoon',
-    branch = 'harpoon2',
-    dependencies = { 'nvim-lua/plenary.nvim' },
-  },
 
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 }

@@ -31,5 +31,5 @@ dynamic_padding = false
 opacity = 0.95
 
 [window.padding]
-x = 25
-y = 20
+x = 5
+y = 5
