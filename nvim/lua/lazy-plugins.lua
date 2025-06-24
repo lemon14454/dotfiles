@@ -11,6 +11,7 @@ require('lazy').setup {
   require 'custom.plugins.telescope',
   require 'custom.plugins.treesitter',
   require 'custom.plugins.dadbod',
+  require 'custom.plugins.harpoon',
 
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',

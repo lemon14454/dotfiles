@@ -5,8 +5,9 @@ return {
     config = function()
       require('oil').setup {
         columns = { 'icon' },
-        kemaps = {
+        keymaps = {
           ['<C-h>'] = false,
+          ["<C-p>"] = false,
           ['<M-h>'] = 'actions.select_split',
         },
         view_options = {
