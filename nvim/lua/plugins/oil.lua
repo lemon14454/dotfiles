@@ -5,11 +5,6 @@ return {
     config = function()
       require('oil').setup {
         columns = { 'icon' },
-        keymaps = {
-          ['<C-h>'] = false,
-          ["<C-p>"] = false,
-          ['<M-h>'] = 'actions.select_split',
-        },
         view_options = {
           show_hidden = true,
         },

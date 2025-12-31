@@ -9,18 +9,6 @@ hide_when_typing = true
 [font]
 size = 16.0
 
-[font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Heavy"
-
-[font.bold_italic]
-family = "JetBrainsMono Nerd Font"
-style = "Heavy Italic"
-
-[font.italic]
-family = "JetBrainsMono Nerd Font"
-style = "Medium Italic"
-
 [font.normal]
 family = "JetBrainsMono Nerd Font"
 style = "Regular"
@@ -29,6 +17,7 @@ style = "Regular"
 decorations = "buttonless"
 dynamic_padding = false
 opacity = 0.95
+blur = true
 
 [window.padding]
 x = 5
