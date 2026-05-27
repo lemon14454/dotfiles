@@ -9,6 +9,15 @@ return { -- LSP Configuration & Plugins
     { 'folke/neodev.nvim', opts = {} },
   },
   config = function()
+    local default_publish_diagnostics = vim.lsp.handlers['textDocument/publishDiagnostics']
+    vim.lsp.handlers['textDocument/publishDiagnostics'] = function(err, result, ctx, config)
+      local client = vim.lsp.get_client_by_id(ctx.client_id)
+      if client and client.name == 'pyright' then
+        return
+      end
+      return default_publish_diagnostics(err, result, ctx, config)
+    end
+
     vim.api.nvim_create_autocmd('LspAttach', {
       group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
       callback = function(event)
@@ -96,7 +105,6 @@ return { -- LSP Configuration & Plugins
           },
           python = {
             analysis = {
-              ignore = { '*' }, -- Using Ruff
               typeCheckingMode = 'off', -- Using mypy
             },
           },
